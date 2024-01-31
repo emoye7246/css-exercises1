@@ -1,0 +1,9 @@
+/* The div in this code controls the div section in the body of index.html */
+div {
+    /* Color just changes the color of the text */
+    color: white;
+    background-color: red;
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+}
