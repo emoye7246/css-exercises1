@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Working on line 1  */
+
+ .para {
+  font-weight: 800;
+  color: hsl(hue, saturation, lightness);
+  font-size: 22px;
+}
+
+
+ .small-para {
+  font-weight: bold;
+  font-size: 15px;
+ }
+
+ #confirm-button {
+  background-color: green;
+  color: white;
+ }
+
+ .text .child {
+    font-weight: bold;
+ }
