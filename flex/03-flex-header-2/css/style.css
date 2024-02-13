@@ -7,11 +7,17 @@ body {
   background: #eee;
   font-family: Besley, serif;
 }
-
+/* Aligin-items allows to properly place contetnts on the cross axis or horizontally so that is why we used it here and display flex must be applied */
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  align-items: center;
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+
 }
 
 .profile-image {
@@ -44,5 +50,21 @@ a {
 }
 
 ul {
+  /* Margin 0 padding 0 and display flex allows the items to be placed horizontal as a reference point */
+  /* It follows the nested or the parent element */
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+}
+
+/* By creating a div class we can group two classes together and apply flex to the as needed */
+/* For this one in paticular we grouped the profile image and button elements to space them evenly */
+/* Margin-left auto allows for the elements to be pushed to the far left but must have display flex applied to it */
+
+.group {
+  margin-left: auto;
+  display: flex;
+  gap: 16px;
 }
