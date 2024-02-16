@@ -20,6 +20,10 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+  padding: 16px;
 }
 
 .icon {
@@ -30,9 +34,11 @@ body {
   width: 42px;
   height: 42px;
   border-radius: 50%;
+  /* Display flex; align-items: center; and justify-content: center; will center something in flexbox and flex-shirnk: 0; allows for an element not to shrink */
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -48,6 +54,7 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+
 }
 
 button {
@@ -66,4 +73,18 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+/* with this set of commands in flex you can put things in the same class thats either above or below one another and place them on the same line */
+.header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+.text {
+  margin-bottom: 16px;
 }
